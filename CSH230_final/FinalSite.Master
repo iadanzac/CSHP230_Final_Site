@@ -1,0 +1,159 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true"%>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head runat="server">
+    <title>CSHP230 Final Project</title>
+
+           <style>
+
+    nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+    background-color:  lightsteelblue;
+        border: 1px solid ;
+}
+
+  
+
+    header {
+         
+    padding: 1em;
+       color: white;
+   
+     background-color: lightsteelblue;
+    clear: left;
+    text-align: left;
+   
+    
+}
+
+   h1{  
+      font-size: 50px; 
+       text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  }
+    
+    footer {
+    padding: 1em;
+    color: white;
+    background-color:  lightsteelblue;
+    clear: left;
+    text-align: center;
+}
+
+
+       .button {
+        background-color:  lightblue;
+        border: none;
+        color: darkblue;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border: 2px solid #555555;
+        transition-duration: 0.4s;
+    }
+    .button:hover {
+            background-color: lightcyan;
+             color: black;
+            
+    }
+
+
+    div.loginbar {
+    width: 100%;
+    border: 1px solid gray;
+    background-color: lightblue;
+   
+}
+    div.rightj {
+        text-align: right;
+    } 
+
+
+        </style>
+      
+
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+       
+   
+    
+    </asp:ContentPlaceHolder>
+
+</head>
+
+<body>
+    <form id="form1" runat="server">
+          
+    
+    <div class ="loginbar">
+             <img src="Images/uwgh-logo.png" style="height: 43px; width: 405px" />
+          
+        <div class="rightj">
+        <strong> <span><a href="Login.aspx">Existing User Login</a></span></strong>
+            <strong>  <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <a href="NewLogin.aspx">Request Login</a></span></strong>
+            </div>
+         </div>
+        
+        <div>
+         
+            <header><h1><b>C# PROGRAMMING CERTIFICATE</b></h1></header>
+            
+
+      <div class ="loginbar"><br /></div>
+
+                  
+          <nav>
+
+                    <asp:Button ID="Button1" CssClass ="button" runat="server" Text="Classes" PostBackUrl="~/Classes.aspx" Height="54px" Width="150px" />
+                    <br />
+                    <asp:Button ID="Button2" CssClass ="button" runat="server" Text="Register" PostBackUrl="~/Register.aspx" Height="54px" Width="150px" />
+                    <br />
+                    <asp:Button ID="Button3" CssClass ="button" runat="server" Text="MyClasses" PostBackUrl="~/MyClasses.aspx" Height="54px" Width="150px" />
+           
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+                    <br />
+           
+                </nav>
+       
+          
+
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+           
+
+        
+
+
+            
+            
+            </asp:ContentPlaceHolder>
+          
+          <footer>Copyright &copy; Chris Iadanza, CSHP203 </footer>
+        
+        </div>
+    </form>
+</body>
+</html>
